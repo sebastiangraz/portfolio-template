@@ -12,6 +12,20 @@ fields:
   text:
     label: Text
     type:  textarea
-  tags:
-    label: Tags
-    type:  tags
+  project:
+    label: Project
+    type: structure
+    style: table
+    fields:
+      project_title:
+        label: Title
+        type: text
+      project_date:
+        label: Date
+        type: date
+      project_location:
+        label: Location
+        type: text
+      project_image:
+        label: Image
+        type: image
