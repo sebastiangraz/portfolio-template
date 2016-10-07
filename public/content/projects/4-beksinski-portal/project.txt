@@ -1,0 +1,19 @@
+Title: Beksinski Portal
+
+----
+
+Year: 1964
+
+----
+
+Text: This portal was painted by Beksinski in 1964 on a canvas
+
+----
+
+Project: 
+
+- 
+  project_title: ""
+  project_date: ""
+  project_location: ""
+  project_image: beksinski3.jpg
