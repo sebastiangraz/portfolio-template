@@ -2,18 +2,26 @@ Title: Beksinski Portal
 
 ----
 
-Year: 1964
-
-----
-
-Text: This portal was painted by Beksinski in 1964 on a canvas
-
-----
-
 Project: 
 
 - 
-  project_title: ""
-  project_date: ""
+  project_title: Portal to Sanctuary
+  project_date: "1956"
   project_location: ""
   project_image: beksinski3.jpg
+  project_desc: >
+    Depicted; a portal to leave the Lands of
+    Despair
+  project_method: Acryl on canvas
+
+----
+
+Project-date: 1956
+
+----
+
+Project-method: Oil on canvas
+
+----
+
+Project-desc: Depicted; a portal to leave the Lands of Despair

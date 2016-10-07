@@ -1,28 +1,28 @@
 
 <?php snippet('header') ?>
 
-  <main class="main row" role="main">
-
-    <div class="text">
+<main class="main row" role="main">
+  <div class="text-content">
+    <div class="mb-l">
       <h1><?php echo $page->title()->html() ?></h1>
-      <!-- <?php echo $page->text()->kt() ?> -->
-      <?php
-        $events = $page->project()->yaml();
-
-
-
-        foreach($events as $event): ?>
-
-          <h1><?php echo $event['project_title'] ?></h1>
-          <p><?php echo date('Y-m-d', strtotime($event['project_date'])) ?></p>
-          <p><?php echo $event['project_location'] ?></p>
-          <?php if($image = $page->image($event['project_image'])) echo $image->html() ?>
-
-        <?php endforeach ?>
-
+      <h2><?php echo $page->project_date()->html() ?></h2>
+      <h3><?php echo $page->project_method()->html() ?></h3>
+      <h3><?php echo $page->project_desc()->html() ?></h3>
     </div>
+  </div>
+  <?php
+  $projects = $page->project()->yaml();
+  foreach($projects as $project): ?>
+    <figure class="mb-l">
+      <?php if($image = $page->image($project['project_image'])) echo $image->html() ?>
+    </figure>
+
+  <?php endforeach ?>
 
 
-  </main>
+<?php snippet('next-prev') ?>
+
+
+</main>
 
 <?php snippet('footer') ?>

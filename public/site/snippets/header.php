@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header class="header" role="banner">
+<header class="header mb-l" role="banner">
   <div class="row">
     <a class="logo" href="<?php echo url() ?>">
       <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />

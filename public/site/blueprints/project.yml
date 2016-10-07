@@ -6,26 +6,22 @@ fields:
   title:
     label: Title
     type:  text
-  year:
+  project_date:
     label: Year
-    type:  text
-  text:
-    label: Text
-    type:  textarea
+    type: text
+    width: 1/2
+  project_method:
+    label: Method
+    type: text
+    width: 1/2
+  project_desc:
+    label: Project Description
+    type: text
   project:
     label: Project
     type: structure
     style: table
     fields:
-      project_title:
-        label: Title
-        type: text
-      project_date:
-        label: Date
-        type: date
-      project_location:
-        label: Location
-        type: text
       project_image:
         label: Image
         type: image

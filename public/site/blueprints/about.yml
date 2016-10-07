@@ -1,0 +1,16 @@
+title: Page
+pages: true
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  name:
+    label: Name
+    type:  text
+  ingress:
+    label: Ingress
+    type:  markdown
+  text:
+    label: Text
+    type:  markdown
