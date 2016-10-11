@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
-  <?php echo css('assets/css/main.css') ?>
-</head>
-<body>
-
-<header class="header mb-l" role="banner">
-  <div class="row">
+<header class="header" role="banner">
+  <div class="header-content">
     <a class="logo" href="<?php echo url() ?>">
-      <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
-    </a>
-    <?php snippet('menu') ?>
-  </div>
-</header>
+      <h2 class="mb-l">Marie Strom Gunner</h3>
+      </a>
+      <ul class="projects">
+        <?php foreach(page('projects')->children()->visible()->limit(8) as $project): ?>
+          <li>
+            <h2><a data-id="<?php echo 'project-', $project->num() ?>" href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h2>
+          </li>
+        <?php endforeach ?>
+      </ul>
+      <ul>
+        <li><a href="/projects">See all projects</a></li>
+      </ul>
+      <ul class="link-group mt-l">
+        <li><a href="/about">About</a></li>
+        <li><a href="/kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>

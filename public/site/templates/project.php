@@ -1,9 +1,8 @@
-
-<?php snippet('header') ?>
-
+<?php snippet('head') ?>
 <main class="main row" role="main">
   <div class="text-content">
-    <div class="mb-l">
+    <div class="mb-l mt-l">
+      <?php snippet('previous-page') ?>
       <h1><?php echo $page->title()->html() ?></h1>
       <h2><?php echo $page->project_date()->html() ?></h2>
       <h3><?php echo $page->project_method()->html() ?></h3>
@@ -15,6 +14,8 @@
   foreach($projects as $project): ?>
     <figure class="mb-l">
       <?php if($image = $page->image($project['project_image'])) echo $image->html() ?>
+      <?php if($image = $page->image($project['project_image'])) echo $image->html() ?>
+
     </figure>
 
   <?php endforeach ?>

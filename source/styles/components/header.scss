@@ -1,6 +1,20 @@
 .header {
   background: darken($white, 3);
-  padding: 3rem 0;
+  float: left;
+  height: 100vh;
+  padding: 3rem;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include bp(sm){
+  min-width: 20rem;
+  width: 30%;
+  }
   .row {
     align-items: center;
     display: flex;
@@ -18,6 +32,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+
   li {
     list-style: none;
     margin-left: 1rem;
