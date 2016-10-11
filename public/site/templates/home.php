@@ -3,5 +3,4 @@
 <div id="projects">
   <?php snippet('project-loop') ?>
 </div>
-
 <?php snippet('footer') ?>

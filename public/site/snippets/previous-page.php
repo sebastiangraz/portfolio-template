@@ -1,2 +1,2 @@
 
-<a href="<?php echo url() ?>">Home</a>
+<a href="<?php echo url() ?>">Hem</a>
