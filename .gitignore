@@ -18,4 +18,4 @@ typings
 
 tmp/
 
-/vendor/
+vendor/
