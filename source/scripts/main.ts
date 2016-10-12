@@ -6,7 +6,6 @@ documentReady(function() {
   traverseArt('.projects a');
 });
 
-
 function traverseArt(fn) {
   $(fn).on("mouseenter", function () {
       var attachedContainer = $(this).data('id');

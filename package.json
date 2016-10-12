@@ -28,6 +28,5 @@
     "typescript": "^1.8.10",
     "webpack": "^1.13.1",
     "webpack-stream": "^3.2.0"
-  },
-  "dependencies": {}
+  }
 }
