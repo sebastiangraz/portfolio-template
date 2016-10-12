@@ -16,12 +16,17 @@ class ComposerStaticInit6cc42e0cd06c74c6b6f0e14410023d7f
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Process\\' => 26,
+            'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
             'Seld\\CliPrompt\\' => 15,
         ),
         'R' => 
         array (
             'React\\Promise\\' => 14,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
         ),
         'L' => 
         array (
@@ -50,6 +55,10 @@ class ComposerStaticInit6cc42e0cd06c74c6b6f0e14410023d7f
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
         ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
@@ -61,6 +70,10 @@ class ComposerStaticInit6cc42e0cd06c74c6b6f0e14410023d7f
         'React\\Promise\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'League\\Flysystem\\ZipArchive\\' => 
         array (
