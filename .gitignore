@@ -17,3 +17,5 @@ source/vendor/modernizr.js
 typings
 
 tmp/
+
+/vendor/
