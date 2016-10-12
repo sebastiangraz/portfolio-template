@@ -1,6 +1,6 @@
 <div class="next-prev flex mb-l text-content">
   <?php if($page->hasPrevVisible()): ?>
-    <a href="<?php echo $page->prevVisible()->url() ?>">
+    <a class="prev" href="<?php echo $page->prevVisible()->url() ?>">
       <div class="next-prev-image">
         <?php echo thumb($page->prevVisible()->image(), array('width' => 120)); ?>
       </div>
@@ -11,7 +11,7 @@
   <?php endif ?>
 
   <?php if($page->hasNextVisible()): ?>
-    <a href="<?php echo $page->nextVisible()->url() ?>">
+    <a class="next" href="<?php echo $page->nextVisible()->url() ?>">
       <div class="next-prev-image">
         <?php echo thumb($page->nextVisible()->image(), array('width' => 120)); ?>
       </div>

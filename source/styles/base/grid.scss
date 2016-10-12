@@ -1,0 +1,20 @@
+@mixin grid($split, $padding : $grid-padding) {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -$padding / 2;
+  width: calc(100% - -#{$padding});
+
+  > * {
+    list-style: none;
+    margin: 0 $padding / 2;
+    width: calc(99.99% * 1/#{$split} - #{$padding});
+  }
+}
+
+.grid-2 {
+  @include grid(2);
+}
+
+.grid-3 {
+  @include grid(3);
+}

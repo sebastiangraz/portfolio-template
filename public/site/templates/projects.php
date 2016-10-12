@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <ul class="grid-3 mb-l">
+    <ul class="grid-2 mb-l">
       <?php $projects = page('projects')->children()->visible(); ?>
       <?php $first = $projects->first() ?>
 
@@ -17,7 +17,7 @@
       <li <?php if($project == $first) { echo ' class="active ', 'project-', $project->num(), '"'; } else { echo ' class="', 'project-', $project->num(), '"';} ?>>
         <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
         <a href="<?php echo $project->url() ?>">
-          <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
+          <img class="mb-l" src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
         </a>
         <?php endif ?>
       </li>

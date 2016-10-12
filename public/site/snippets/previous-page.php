@@ -1,2 +1,2 @@
 
-<a href="<?php echo url() ?>">Hem</a>
+<a href="<?php echo url() ?>">&larr; Hem</a>

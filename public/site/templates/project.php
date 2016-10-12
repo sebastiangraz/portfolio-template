@@ -4,9 +4,8 @@
   <div class="text-content">
     <div class="mb-l mt-l">
       <?php snippet('previous-page') ?>
-      <h1 class="mb-s"><?php echo $page->title()->html() ?></h1>
-      <div class="flex mb-s">
-        <h2><?php echo $page->project_date()->html() ?></h2>
+      <h1 class="mb-s"><?php echo $page->title()->html() ?><sup><?php echo $page->project_date()->html() ?></sup></h1>
+      <div class="mb-s">
         <h3><?php echo $page->project_method()->html() ?></h3>
       </div>
       <h3><?php echo $page->project_desc()->html() ?></h3>

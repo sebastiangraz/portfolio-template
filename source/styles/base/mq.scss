@@ -1,0 +1,12 @@
+ @mixin bp($point) {
+   @if $point == lg {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == md {
+     @media (min-width: 64em) { @content ; }
+  }
+  @else if $point == sm {
+     @media (min-width: 37.5em)  { @content ; }
+
+  }
+}

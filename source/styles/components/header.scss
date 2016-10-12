@@ -1,5 +1,5 @@
 .header {
-  background: darken($white, 3);
+  background: $white;
   float: left;
   height: 100vh;
   padding: 3rem;
@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 2;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
