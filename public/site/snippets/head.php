@@ -7,7 +7,7 @@
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <?php echo css('assets/css/main.css') ?>
-  <?php echo js('assets/scripts/main.js', true) ?>
+  <?php echo js('/assets/scripts/main.js') ?>
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
