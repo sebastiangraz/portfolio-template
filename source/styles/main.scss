@@ -1,6 +1,6 @@
 @import 'base/variables';
-@import 'base/grid';
 @import 'base/mq';
+@import 'base/grid';
 
 @import 'components/header';
 
@@ -81,11 +81,11 @@ hr {
 }
 
 .mb-l {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .mt-l {
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .mb-s {
@@ -111,7 +111,7 @@ hr {
         position: absolute;
         display: block;
         background: lighten($black, 88%);
-        top:18px;
+        top:calc(50% - -1px);
         z-index: -1;
       }
     }
@@ -175,6 +175,10 @@ hr {
       img {
         z-index: 1;
         opacity: 1;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }
@@ -202,4 +206,24 @@ hr {
 
 .relative {
   position: relative;
+}
+
+// Height media query
+@media (max-height: 680px) {
+
+  .header-content {
+    h2 { font-size: 1.125rem; }
+    .mt-l {
+      margin-top: 3rem;
+    }
+    .mb-l {
+      margin-bottom: 3rem;
+    }
+    .mt-s {
+      margin-top: 0.5rem;
+    }
+    .mb-s {
+      margin-bottom: 0.5rem;
+    }
+  }
 }

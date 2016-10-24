@@ -5,7 +5,7 @@
       Utvalda verk
     </p>
     <ul class="projects mb-s mt-s">
-      <?php foreach(page('projects')->children()->visible()->limit(8) as $project): ?>
+      <?php foreach(page('projects')->children()->visible()->limit(6) as $project): ?>
         <li>
           <h2><a data-id="<?php echo 'project-', $project->num() ?>" href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h2>
         </li>

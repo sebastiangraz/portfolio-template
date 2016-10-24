@@ -13,9 +13,10 @@
   align-items: center;
 
   @include bp(sm){
-  min-width: 20rem;
-  width: 30%;
+    min-width: 20rem;
+    width: 30%;
   }
+
   .row {
     align-items: center;
     display: flex;

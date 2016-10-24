@@ -12,7 +12,11 @@
 }
 
 .grid-2 {
-  @include grid(2);
+  @include grid(1);
+
+  @include bp(md){
+    @include grid(2);
+  }
 }
 
 .grid-3 {
