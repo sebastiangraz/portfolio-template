@@ -8,8 +8,7 @@
         <p><?php echo $page->text()->kt() ?></p>
       </div>
     </div>
-
-    <ul class="grid-3 mb-l">
+    <ul class="grid-3">
       <?php $projects = page('malningar')->children()->visible(); ?>
       <?php $first = $projects->first() ?>
 

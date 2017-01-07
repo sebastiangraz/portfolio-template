@@ -11,18 +11,22 @@
       <h3><?php echo $page->project_desc()->html() ?></h3>
     </div>
   </div>
-  <?php
 
-  foreach($projects as $project): ?>
-  <figure class="mb-l relative">
-    <?php if($image = $page->image($project['project_image'])):?>
-      <?php echo $image->html() ?>
-    <?php endif  ?>
+  <div class="malningar">
 
-  </figure>
 
-<?php endforeach ?>
+    <?php
 
+    foreach($projects as $project): ?>
+    <figure class="mb-l relative">
+      <?php if($image = $page->image($project['project_image'])):?>
+        <?php echo $image->html() ?>
+      <?php endif  ?>
+      
+    </figure>
+
+  <?php endforeach ?>
+</div>
 
 <?php snippet('next-prev') ?>
 

@@ -60,6 +60,12 @@ ul {
   width: 80%;
 }
 
+.malningar {
+  img {
+    margin: 0 auto;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -73,6 +79,10 @@ hr {
   background: $black;
   border: 0;
   height: 1px;
+}
+
+[class^="mb-"] {
+  display: block;
 }
 
 .text-content {

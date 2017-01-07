@@ -20,5 +20,12 @@
 }
 
 .grid-3 {
-  @include grid(3);
+  @include grid(1);
+
+  @include bp(sm){
+    @include grid(2);
+  }
+  @include bp(lg){
+    @include grid(3);
+  }
 }
