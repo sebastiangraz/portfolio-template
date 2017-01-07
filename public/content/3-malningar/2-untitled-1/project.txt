@@ -1,4 +1,4 @@
-Title: Beksinski Car
+Title: Untitled 1
 
 ----
 
@@ -8,13 +8,13 @@ Project:
   project_title: Beksinski Car
   project_date: "1964"
   project_location: test2
-  project_image: beksinski4.jpg
+  project_image: bild1.jpg
   project_desc: "The car represents the direct result of global warming and it's inevitable demise"
   project_method: Oil on canvas
 
 ----
 
-Project-date: 1957
+Project-date: 2014
 
 ----
 
@@ -22,4 +22,4 @@ Project-method: Acryl on canvas
 
 ----
 
-Project-desc: The car represents the direct result of global warming and it's inevitable demise
+Project-desc: Lägg in bild information här

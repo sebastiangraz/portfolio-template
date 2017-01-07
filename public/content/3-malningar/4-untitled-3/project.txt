@@ -1,4 +1,4 @@
-Title: Beksinski Church
+Title: Untitled 3
 
 ----
 
@@ -8,7 +8,7 @@ Project:
   project_title: Burning Church
   project_date: "1976"
   project_location: Poland
-  project_image: beksinski1.jpg
+  project_image: untitled-3.jpg
   project_desc: Burning structure after doomsday
   project_method: Oil on canvas
 
@@ -22,4 +22,4 @@ Project-method: Oil on canvas
 
 ----
 
-Project-desc: Burning structure after doomsday
+Project-desc: Info om bilden

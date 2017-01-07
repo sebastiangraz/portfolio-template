@@ -1,0 +1,20 @@
+Title: Untitled 6
+
+----
+
+Project-date: 
+
+----
+
+Project-method: 
+
+----
+
+Project-desc: 
+
+----
+
+Project: 
+
+- 
+  project_image: bild-6.jpg

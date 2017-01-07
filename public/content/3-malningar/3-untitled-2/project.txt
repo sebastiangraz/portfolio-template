@@ -1,4 +1,4 @@
-Title: Beksinski Crawling Death
+Title: Untitled 2
 
 ----
 
@@ -8,7 +8,7 @@ Project:
   project_title: Crawling Death
   project_date: "1956"
   project_location: testttt
-  project_image: beksinski2.jpg
+  project_image: untitled-2.jpg
   project_desc: >
     Depicting centuries of despair on earth.
     Ghoulesque creatures roam the land
@@ -16,7 +16,7 @@ Project:
 
 ----
 
-Project-date: 1967
+Project-date: 1998
 
 ----
 
@@ -24,4 +24,4 @@ Project-method: Oil on canvas
 
 ----
 
-Project-desc: Depicting centuries of despair on earth. Ghoulesque creatures roam the land
+Project-desc: Info om bilden

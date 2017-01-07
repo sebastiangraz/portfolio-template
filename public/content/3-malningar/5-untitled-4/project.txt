@@ -1,4 +1,4 @@
-Title: Beksinski Portal
+Title: Untitled 4
 
 ----
 
@@ -8,7 +8,7 @@ Project:
   project_title: Portal to Sanctuary
   project_date: "1956"
   project_location: ""
-  project_image: beksinski3.jpg
+  project_image: untitled-4.jpg
   project_desc: >
     Depicted; a portal to leave the Lands of
     Despair
@@ -24,4 +24,4 @@ Project-method: Oil on canvas
 
 ----
 
-Project-desc: Depicted; a portal to leave the Lands of Despair
+Project-desc: Info om bilden

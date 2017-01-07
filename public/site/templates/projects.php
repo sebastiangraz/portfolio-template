@@ -9,15 +9,16 @@
       </div>
     </div>
 
-    <ul class="grid-2 mb-l">
-      <?php $projects = page('projects')->children()->visible(); ?>
+    <ul class="grid-3 mb-l">
+      <?php $projects = page('malningar')->children()->visible(); ?>
       <?php $first = $projects->first() ?>
 
       <?php foreach($projects->limit($count) as $project): ?>
-      <li <?php if($project == $first) { echo ' class="active ', 'project-', $project->num(), '"'; } else { echo ' class="', 'project-', $project->num(), '"';} ?>>
+      <li>
         <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
         <a href="<?php echo $project->url() ?>">
-          <img class="mb-l" src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
+          <img class="mb-s" src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
+          <h2 class="mb-l"><?php echo $project->title()->html() ?></h2>
         </a>
         <?php endif ?>
       </li>

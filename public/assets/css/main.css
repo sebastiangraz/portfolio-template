@@ -148,6 +148,10 @@ hr {
   margin: 0 auto;
   max-width: 640px; }
 
+[class^="mb-"] {
+  display: block;
+}
+
 .mb-l {
   margin-bottom: 5rem; }
 

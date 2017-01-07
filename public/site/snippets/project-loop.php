@@ -1,5 +1,5 @@
 <ul class="mb-l">
-  <?php $projects = page('projects')->children()->visible(); ?>
+  <?php $projects = page('malningar')->children()->visible(); ?>
   <?php $first = $projects->first() ?>
 
   <?php foreach($projects->limit($count) as $project): ?>
