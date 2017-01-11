@@ -63,7 +63,6 @@ ul {
 .malningar {
   img {
     margin: 0 auto;
-    height: 50vh;
   }
 }
 
@@ -110,6 +109,7 @@ hr {
 .projects {
   a {
     background: $white;
+    padding-right: 2rem;
     position: relative;
 
     &.active {
@@ -168,11 +168,13 @@ hr {
 }
 
 #projects {
-  position: absolute;
+  position: fixed;
+  background: #f4f2ec;
+  z-index: 1;
   height: 100vh;
   top:0;
-  width: 70%;
-  left: 30%;
+  width: 50%;
+  right: 0;
 
   ul {
     margin: 0;
@@ -184,7 +186,7 @@ hr {
 
     &.active {
       img {
-        z-index: 1;
+        z-index: 2;
         opacity: 1;
 
         &:hover {
@@ -198,10 +200,12 @@ hr {
     transition: .6s ease-out all;
     opacity: 0;
     position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    max-height: 620px;
+    transform: translateY(-50%) translateX(-50%);
+    width: 70%;
+    object-fit: contain;
   }
 }
 
