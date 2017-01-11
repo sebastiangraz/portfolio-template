@@ -1,3 +1,29 @@
+.grid-2-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-left: -16px;
+  width: calc(100% - -32px); }
+  .grid-2-sm > * {
+    list-style: none;
+    margin: 0 16px;
+    width: calc(99.99% * 1/2 - 32px); }
+  @media (min-width: 37.5em) {
+    .grid-2-sm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin-left: -16px;
+      width: calc(100% - -32px); }
+      .grid-2-sm > * {
+        list-style: none;
+        margin: 0 16px;
+        width: calc(99.99% * 1/1 - 32px); } }
+
 .grid-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +92,7 @@
 .header {
   background: #fff;
   float: left;
-  padding: 3rem;
+  padding: 2rem;
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -88,7 +114,8 @@
   @media (min-width: 37.5em) {
     .header {
       min-width: 16rem;
-      width: 50%; } }
+      width: 40%;
+      padding: 2rem; } }
   .header .row {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -99,6 +126,29 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+
+.header-content {
+  min-width: 100%; }
+  @media (min-width: 37.5em) {
+    .header-content {
+      min-width: initial; } }
+  .header-content li {
+    margin-bottom: 1rem; }
+    @media (min-width: 37.5em) {
+      .header-content li {
+        margin-bottom: 0; } }
+    @media (min-width: 37.5em) {
+      .header-content li {
+        display: block; } }
+    .header-content li h2 {
+      font-size: 1.25rem; }
+      @media (min-width: 37.5em) {
+        .header-content li h2 {
+          font-size: 1.5rem; } }
+    .header-content li img {
+      height: 100px;
+      width: 100%;
+      object-fit: cover; }
 
 .logo img {
   max-height: 3rem; }
@@ -194,7 +244,6 @@ hr {
 
 .projects a {
   background: #fff;
-  padding-right: 2rem;
   position: relative; }
   .projects a.active {
     color: #000; }
@@ -244,7 +293,7 @@ hr {
   z-index: 1;
   height: 100vh;
   top: 0;
-  width: 50%;
+  width: 60%;
   right: 0; }
   #projects ul {
     margin: 0;
@@ -289,6 +338,12 @@ hr {
 
 .relative {
   position: relative; }
+
+.hidden-mobile {
+  display: inline-block; }
+  @media (min-width: 37.5em) {
+    .hidden-mobile {
+      display: none; } }
 
 @media (max-height: 680px) {
   .header-content h2 {

@@ -109,7 +109,6 @@ hr {
 .projects {
   a {
     background: $white;
-    padding-right: 2rem;
     position: relative;
 
     &.active {
@@ -163,7 +162,6 @@ hr {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
   }
 }
 
@@ -173,7 +171,7 @@ hr {
   z-index: 1;
   height: 100vh;
   top:0;
-  width: 50%;
+  width: 60%;
   right: 0;
 
   ul {
@@ -221,6 +219,13 @@ hr {
 
 .relative {
   position: relative;
+}
+
+.hidden-mobile {
+  display: inline-block;
+  @include bp(sm){
+    display: none;
+  }
 }
 
 // Height media query

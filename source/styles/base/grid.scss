@@ -11,6 +11,13 @@
   }
 }
 
+.grid-2-sm {
+  @include grid(2);
+  @include bp(sm){
+    @include grid(1);
+  }
+}
+
 .grid-2 {
   @include grid(1);
 

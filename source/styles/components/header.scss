@@ -1,7 +1,7 @@
 .header {
   background: $white;
   float: left;
-  padding: 3rem;
+  padding: 2rem;
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -14,7 +14,8 @@
 
   @include bp(sm){
     min-width: 16rem;
-    width: 50%;
+    width: 40%;
+    padding: 2rem;
   }
 
   .row {
@@ -22,6 +23,39 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.header-content {
+  min-width: 100%;
+  @include bp(sm) {
+    min-width: initial;
+  }
+  li {
+
+    margin-bottom: 1rem;
+
+    @include bp(sm) {
+      margin-bottom: 0
+    }
+
+    @include bp(sm) {
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      @include bp(sm) {
+        font-size: 1.5rem;
+      }
+    }
+
+    img {
+      height: 100px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
 }
 
 .logo {

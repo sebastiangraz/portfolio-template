@@ -6,7 +6,12 @@
     </p>
     <ul class="projects mb-s mt-s">
       <?php foreach(page('malningar')->children()->visible()->limit(6) as $project): ?>
-        <li>
+        <li class="grid-2-sm">
+          <div class="hidden-mobile">
+            <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
+              <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
+            <?php endif ?>
+          </div>
           <h2><a data-id="<?php echo 'project-', $project->num() ?>" href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h2>
         </li>
       <?php endforeach ?>
