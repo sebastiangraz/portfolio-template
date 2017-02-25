@@ -17,13 +17,18 @@
         <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
         <a href="<?php echo $project->url() ?>">
           <img class="mb-s" src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
-          <h2 class="mb-l"><?php echo $project->title()->html() ?></h2>
+          <h3 class="mb-l"><?php echo $project->title()->html() ?></h3>
+
+
         </a>
         <?php endif ?>
       </li>
       <?php endforeach ?>
     </ul>
+    <div class="mb-l">
+      <?php snippet('previous-page') ?>
 
+    </div>
 
   </main>
 

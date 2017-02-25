@@ -27,7 +27,8 @@
 }
 
 .grid-3 {
-  @include grid(1);
+  align-items: baseline;
+  @include grid(2, 1rem);
 
   @include bp(sm){
     @include grid(2);

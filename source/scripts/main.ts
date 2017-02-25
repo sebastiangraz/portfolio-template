@@ -4,10 +4,11 @@ import * as $ from "jquery";
 
 documentReady(function() {
   traverseArt('.projects a');
+
 });
 
 function traverseArt(fn) {
-  $(fn).on("mouseenter", function () {
+  $(fn).on("touchstart mouseover", function () {
       var attachedContainer = $(this).data('id');
       $('.projects li:first-child h2 a').addClass('active');
       $('.projects a').removeClass("active");

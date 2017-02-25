@@ -3,7 +3,9 @@
 <main class="main row" role="main">
   <div class="text-content">
     <div class="mb-l mt-l">
-      <?php snippet('previous-page') ?>
+    <?php snippet('previous-page') ?>
+
+
       <h1 class="mb-s"><?php echo $page->title()->html() ?><sup><?php echo $page->project_date()->html() ?></sup></h1>
       <div class="mb-s">
         <h3><?php echo $page->project_method()->html() ?></h3>
@@ -22,7 +24,7 @@
       <?php if($image = $page->image($project['project_image'])):?>
         <?php echo $image->html() ?>
       <?php endif  ?>
-      
+
     </figure>
 
   <?php endforeach ?>
